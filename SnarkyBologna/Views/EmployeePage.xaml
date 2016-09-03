@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SnarkyBologna.EmployeePage">
+	<ContentPage.Content>
+		<ScrollView  Orientation = "Vertical" VerticalOptions="StartAndExpand">
+			<StackLayout VerticalOptions="StartAndExpand">
+				<Label Text="First Name:" />
+				<Entry x:Name="firstNameEntry" Text="{Binding Path=first_name}" Placeholder="first name" />
+				<Label Text="Last Name:" />
+				<Entry x:Name="lastNameEntry" Text="{Binding Path=last_name}" Placeholder="last name" />
+				<Label Text="Address One:" />
+				<Entry x:Name="addressOne" Text="{Binding Path=address_one}" Placeholder="address 1" />
+				<Label Text="Address Two:" />
+				<Entry x:Name="addressTwo" Text="{Binding Path=address_two}" Placeholder="address 2" />
+				<Label Text="City:" />
+				<Entry x:Name="city" Text="{Binding Path=city}" Placeholder="city" />
+				<Label Text="State:" />
+				<Entry x:Name="state" Text="{Binding Path=state}" Placeholder="state" />
+				<Label Text="Zip Code:" />
+				<Entry x:Name="zipCode" Text="{Binding Path=zip_code}" Placeholder="zip" />
+				<Label Text="Phone:" />
+				<Entry x:Name="phoneNumber" Text="{Binding Path=phone}" Placeholder="phone" />
+				<Button Text="Save" Clicked="OnSaveActivated" />
+				<Button Text="Delete" Clicked="OnDeleteActivated" />
+				<Button Text="Cancel" Clicked="OnCancelActivated" />
+			</StackLayout>
+		</ScrollView>
+	</ContentPage.Content>
+</ContentPage>
